@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+    <title>Tarjetas</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu__cabecera">
+        <p class="titulo-proyecto">TARJETAS</p>
+        <p>Equipo</p>
+        <p id="equipo">
+          <!-- JS modifica el nombre del equipo  -->
+        </p>
+      </div>
+
+      <div class="menu__mazos" id="mazos">
+        <!-- JS genera botones para cada mazo (lista de tarjetas) -->
+        <!-- <button class="mazo" id="pronombres">Pronombres</button> -->
+      </div>
+    </div>
+
+    <div class="panel">
+      <div id="visorDeTarjetas" class="panel__visor-tarjetas">
+        <!-- JS añade las tarjetas -->
+        <!-- 
+          <div class="tarjeta">       
+             <div class="tarjeta--anverso"> </div>
+             <div class="tarjeta--reverso"> </div>
+          </div>
+         -->
+      </div>
+
+      <div class="panel__navegacion">
+        <!--  Los botones incluyen entidades HTML para indicar 
+              avance con &laquo; (similar a >>)    
+              retroceso con &raquo; (similar a <<) 
+              https://developer.mozilla.org/es/docs/Glossary/Entidad 
+          
+        -->
+
+        <button id="anterior" class="desplazamiento">&laquo;</button>
+        <p id="referencia" class="referencia">
+          <!-- JS añade  n/m -->
+          <!-- n es numero de tarjeta visible (activa)  -->
+          <!-- m es numero total de tarjetas -->
+        </p>
+        <button id="siguiente" class="desplazamiento">&raquo;</button>
+      </div>
+    </div>
+  </body>
+</html>
